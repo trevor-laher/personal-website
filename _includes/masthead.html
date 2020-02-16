@@ -20,14 +20,12 @@
         </a>
       </div>
     {% endif %}
-    {% if user.email %}
-      <div class="{{ metadata_styles }}">
-        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.email }}
-        </a>
-      </div>
-    {% endif %}
+    <div class="{{ metadata_styles }}">
+      {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
+      <a href="mailto:trevorlaher@gmail.com" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        trevorlaher@gmail.com
+      </a>
+    </div>
     {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
@@ -48,7 +46,13 @@
       </div>
     {% endif %}
     {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
+      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Microsoft</span>
     {% endif %}
   </div>
 {% endif %}
+<br>
+<ol>
+  <li><a href="/aboutMe" style="color: white"><h2>About Me</h2></a></li>
+  <li><a href="/Resume-TrevorLaher.pdf" style="color: white"><h2>Resume</h2></a></li>
+</ol>
+

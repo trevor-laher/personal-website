@@ -1,5 +1,5 @@
 layout: sidebar
-style: light
+style: dark
 
 plugins:
   - jekyll-octicons
@@ -17,7 +17,7 @@ defaults:
       layout: "post"
 
 projects:
-  sort_by: pushed
+  sort_by: stars
   # sort_by options:
   #   - pushed
   #   - stars
@@ -28,14 +28,14 @@ projects:
     projects:
     # - repo-name
 
-# social_media:
+social_media:
   # behance: your_username
   # dribbble: your_username
   # facebook: your_username
   # hackerrank: your_username
   # instagram: your_username
   # keybase: your_username
-  # linkedin: your_username
+  linkedin: trevor-laher-366128b0
   # mastodon: your_username
   # medium: your_username
   # stackoverflow: your_user_id
@@ -46,13 +46,29 @@ projects:
   # website: http://your_website_url
   # youtube: your_username
 
+products:
+  - name: Sway Points
+    web_url: https://swaypoints.com
+    image_url: https://swaypoints.com/img/slackpoints-graphic-1000px.png
+    description: A Slack tool to make your vote count.
+
 topics:
-  - name: CSS
-    web_url: https://github.com/topics/css
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+  - name: Hiking
+    web_url: /hiking
+    image_url: https://www.pngitem.com/pimgs/m/76-761645_transparent-clipart-montagne-mountain-icon-hd-png-download.png
 
-  - name: Web design
+  - name: Cloud Computing
+    web_url: /cloud
+    image_url: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3MXMnRVtUvQLkjXKjvYgGgSH7ZcDellpgXZSLs7MSdykCARIu
 
-  - name: Sass
-    web_url: https://github.com/topics/sass
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
+  - name: Books
+    web_url: /books
+
+  - name: Music
+    web_url: /music
+
+  - name: Video Games
+    web_url: /videoGames
+
+  - name: Film
+    web_url: /film

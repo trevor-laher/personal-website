@@ -12,6 +12,12 @@
       {% include projects.html %}
     </div>
 
+    {% if site.products %}
+      <div class="my-6">
+        {% include products.html %}
+      </div>
+    {% endif %}
+
     {% if site.topics %}
       <div class="my-6">
         {% include interests.html %}
@@ -20,7 +26,15 @@
 
     {% unless posts_total == 0 %}
       <div class="my-6">
-        {% include thoughts.html %}
+        <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>{</h2>
+        <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Related to all things hiking.</p>
+        <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+          {% for post in site.posts%}
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+              {% include post-card.html %}
+            </div>
+          {% endfor %}
+        </div>
       </div>
     {% endunless %}
   </div>
@@ -30,7 +44,7 @@
       {% include masthead.html metadata=true %}
     </div>
 
-    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+    <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #479593 !important"{% endif %}>
       <div class="mx-auto" style="max-width: 900px;">
         {% unless content == ""  %}
           <div class="f4 {% if site.style == 'dark' %}text-white{% endif %} mb-6">
@@ -39,6 +53,10 @@
         {% endunless %}
 
         {% include projects.html %}
+
+        {% if site.products %}
+          {% include products.html %}
+        {% endif %}
 
         {% if site.topics %}
           {% include interests.html %}
